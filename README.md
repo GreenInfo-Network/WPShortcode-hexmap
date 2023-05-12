@@ -2,6 +2,15 @@
 
 A Wordpress shortcode to join a CSV & GeoJSON to make a choropleth map.
 
+Amenities and features:
+- Supply an arbitrary CSV and GeoJSON file, enter a WP shortcode, and get a choropleth map
+- Automatically generated legend
+- the map is really Leaflet though with much interactivity turned off
+  - dynamic bounding box fitting and re-adjustment
+  - infinite extensibility if you want yours to do something else
+- Download PNG button using dom-to-image
+- Caption, which is ARIA-linked to the map DIV for a11y
+
 The name and demo use a hex map to give each state equal area and visibility. However, despite the name and demo, it can be used with other GeoJSON files and proper geometries, not just hex maps.
 
 
