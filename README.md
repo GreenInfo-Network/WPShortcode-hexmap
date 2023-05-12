@@ -2,6 +2,8 @@
 
 A Wordpress shortcode to join a CSV & GeoJSON to make a choropleth map.
 
+The name and demo use a hex map to give each state equal area and visibility. However, despite the name and demo, it can be used with other GeoJSON files and proper geometries, not just hex maps.
+
 
 ## Quick Start
 
