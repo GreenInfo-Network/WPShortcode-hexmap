@@ -36,15 +36,15 @@ add_shortcode('hexmap', function ($atts) {
     $atts['colors'] = explode(',', $atts['colors']);
 
     // enqueue necessary libraries
-    wp_enqueue_script('papaparse', get_template_directory_uri() . '/libraries/papaparse-5.4.1.min.js');
+    wp_enqueue_script('papaparse', get_template_directory_uri() . '/hexmaps/papaparse-5.4.1.min.js');
 
-    wp_enqueue_script('leaflet', get_template_directory_uri() . '/libraries/leaflet-1.9.3.js');
-    wp_enqueue_style('leaflet', get_template_directory_uri() . '/libraries/leaflet-1.9.3.css');
+    wp_enqueue_script('leaflet', get_template_directory_uri() . '/hexmaps/leaflet-1.9.3.js');
+    wp_enqueue_style('leaflet', get_template_directory_uri() . '/hexmaps/leaflet-1.9.3.css');
 
-    wp_enqueue_script('domtoimage', get_template_directory_uri() . '/libraries/domtoimagemore-3.1.6.min.js');
+    wp_enqueue_script('domtoimage', get_template_directory_uri() . '/hexmaps/domtoimagemore-3.1.6.min.js');
 
-    wp_enqueue_script('hexmaps', get_template_directory_uri() . '/functions-hexmaps.js');
-    wp_enqueue_style('hexmaps', get_template_directory_uri() . '/functions-hexmaps.css');
+    wp_enqueue_script('hexmaps', get_template_directory_uri() . '/hexmaps/functions-hexmaps.js');
+    wp_enqueue_style('hexmaps', get_template_directory_uri() . '/hexmaps/functions-hexmaps.css');
 
     // construct and return HTML
     $attrsjson = json_encode($atts);
